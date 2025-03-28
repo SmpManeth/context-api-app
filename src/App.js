@@ -6,7 +6,7 @@ import BlogPage from "./components/BlogPage";
 function App() {
   const userInfo = {
     username: "johndoe",
-    isAdmin: "true",
+    isAdmin: true,
   };
   return (
     <div>
