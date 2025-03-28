@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { useCotext} from 'react';
-import UserInfoContext from '../context/UserInfoContext';
 
-export default function Comment(){
 
-    const {username , isAdmin} = useContext(UserInfoContext)
+export default function Comment({username, isAdmin}) {
+
+ 
     return (
         <div>
             <h1>Comment</h1>

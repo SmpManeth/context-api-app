@@ -1,11 +1,19 @@
 import React from "react";
 import Comment from "./Comment";
 
-export default function Post(){
+
+export default function Post({username, isAdmin}) {
+
+   
+
     return(
         <div>
             <h1>Post</h1>
-            <Comment />
+            <p>Logged In As ...... {username}</p>
+            {
+                isAdmin && <button >Delete Post</button>
+            }
+            <Comment username={username} isAdmin={isAdmin} />
         </div>
     );
 }
